@@ -109,3 +109,102 @@ nav {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+
+.hero-contenido {
+  position: relative;
+  max-width: 680px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(0,245,196,0.07);
+  border: 1px solid rgba(0,245,196,0.25);
+  color: var(--verde);
+  font-size: 0.78rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 100px;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.8rem;
+}
+
+.hero-badge i { font-size: 0.55rem; }
+
+.hero-titulo {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.2rem;
+}
+
+.hero-titulo span { color: var(--verde); }
+
+/* Texto fantasma (outline) */
+.hero-titulo .fantasma {
+  -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+  color: transparent;
+}
+
+.hero-descripcion {
+  color: var(--gris);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2.2rem;
+}
+
+.hero-botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-verde {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--verde);
+  color: var(--fondo);
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.92rem;
+  box-shadow: 0 0 30px rgba(0,245,196,0.25);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.btn-verde:hover {
+  box-shadow: 0 0 50px rgba(0,245,196,0.45);
+  transform: translateY(-2px);
+}
+
+.btn-borde {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--borde);
+  color: var(--texto);
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-borde:hover {
+  border-color: var(--verde);
+  color: var(--verde);
+}
+
+.btn-verde i, .btn-borde i { font-size: 1.1rem; }
+
+/* Contadores */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--borde);
+}
+
